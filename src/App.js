@@ -13,14 +13,10 @@ import Router from './Router';
 export default class App extends Component {
 
     componentWillMount() {
-        firebase.initializeApp({
-            apiKey: 'AIzaSyCfnADSqfZPgF8oeW5g-oELPwy4yJax618',
-            authDomain: 'manager-3120b.firebaseapp.com',
-            databaseURL: 'https://manager-3120b.firebaseio.com',
-            projectId: 'manager-3120b',
-            storageBucket: 'manager-3120b.appspot.com',
-            messagingSenderId: '248373318619'
-        });
+        // open a firebase database and get config here
+        const config = {};
+        // change config before you initialize
+        firebase.initializeApp(config);
     }
 
     render() {
